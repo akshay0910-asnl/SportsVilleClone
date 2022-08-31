@@ -1,6 +1,6 @@
-const environment = process.env['NODE_ENV'] || 'development'
-import * as dotenv from 'dotenv'
-import path from 'path'
+const environment = process.env['NODE_ENV'] || 'development';
+import * as dotenv from 'dotenv';
+import path from 'path';
 dotenv.config({
 	path: path.resolve(
 		process.cwd(),
@@ -8,6 +8,6 @@ dotenv.config({
 		'environments',
 		`env.${environment}`
 	),
-})
+});
 
-export default environment
+export default environment;
